@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap</title>
+	<meta name="description" content="Reactive layout learning">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			height: 150px;
+			background-color: #f50;
+			margin: 0 auto;
+		}
+		@media screen and (max-width: 767px){
+			.container{
+				width: 100%;
+			}
+			.container ul li{
+				width: 33.3%;
+			}
+		}
+		@media screen and (min-width: 768px){
+			.container{
+				width: 750px;
+			}	
+			.container ul li{
+				width: 93.75px;
+			}
+		}
+		@media screen and (min-width: 992px){
+			.container{
+				width: 970px;
+			}
+			.container ul li{
+				width: 121.25px;
+			}
+		}
+		@media screen and (min-width: 1200px){
+			.container{
+				width: 1170px;
+			}
+			.container ul li{
+				width: 146.25px;
+			}
+		}
+		.container ul{
+				list-style: none;
+		}
+		.container ul li{
+			height: 30px;
+			float: left;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li>Navigator</li>
+			<li>Navigator</li>
+			<li>Navigator</li>
+			<li>Navigator</li>
+			<li>Navigator</li>
+			<li>Navigator</li>
+			<li>Navigator</li>
+			<li>Navigator</li>
+		</ul>
+	</div>
+</body>
+</html>
